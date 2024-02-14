@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Song Tagger</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<table class="music-table">
+  <tr id="musicTableHeader">
+    <th>Icon</th>
+    <th>Title</th>
+    <th>Artist</th>
+    <th>Album</th>
+    <th>Duration</th>
+    <!-- <th class="tag">Rock</th> -->
+  </tr>
+  <tbody id="musicTableBody">
+    <!-- Songs dynamically added -->
+  </tbody>
+</table>
+
+<hr/>
+<p>Test search by tag name (will invert column):</p>
+<input type="text" id="searchInput">
+<button onclick="showTaggedSongs()">Search</button>
+<pre id="result"></pre>
+
+<script>
+  function showTaggedSongs() {
+    var searchTerm = document.getElementById("searchInput").value;
+    console.log(`getTaggedSongs(${JSON.stringify(searchTerm)})`)
+    var result = getTaggedSongs(searchTerm);
+    document.getElementById("result").textContent = JSON.stringify(result,null,2);
+    console.log("result:",result);
+    setTaggedSongs(searchTerm,Object.fromEntries(Object.entries(result).map(([a,b])=>[a,!b])));
+  }
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

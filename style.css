@@ -1,0 +1,33 @@
+body {
+  background-color: #3f3f3f;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+}
+.music-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.music-table th, .music-table td {
+  padding: 10px;
+  text-align: left;
+}
+.music-table th {
+  background-color: #4f4f4f;
+}
+.music-table img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+
+/* Style adjustments for checkbox column */
+.music-table .checkbox-cell {
+  text-align: center;
+  padding: 5px; /* Adjust padding for checkbox cells */
+}
+
+/* Style for the checkbox */
+.music-table .checkbox-cell input {
+  margin-right: 5px; /* Space between checkboxes */
+}
