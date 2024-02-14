@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parameter History</title>
+</head>
+<body>
+    <h2>Parameter History</h2>
+    <!--#echo var="DATE_LOCAL" -->
+    <p>
+        <!--#exec cmd="node finishPKCE.js '$QUERY_STRING'" -->
+    </p>
+</body>
+</html>

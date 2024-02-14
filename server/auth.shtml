@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Song Tagger: Spotify Auth Redirect</title>
+    <!--#exec cmd="node startPKCE.js" -->
+</head>
+<body>
+    <h2>Spotify Auth Redirect</h2>
+    <!--#echo var="DATE_LOCAL" -->
+    <p>Didn't get redirect? Open an issue!</p>
+</body>
+</html>

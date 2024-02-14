@@ -1,0 +1,8 @@
+[
+  {
+    "state":"example",
+    "timestamp":1707899525313,
+    "codeVerifier":"randomstr",
+    "codeChallenge":"sha256(randomstr)"
+  }
+]
